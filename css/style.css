@@ -1,0 +1,171 @@
+/*
+Template Name: Aytor
+Version: 1.0.0
+Author: Aytor
+
+
+Table of Content
+===========================
+   ********Home Page*********
+   1) Nav Section
+   2) Banner Section
+   3) Feature Section
+*/
+
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+small,span,
+ol,ul{
+   margin: 0;
+   padding: 0;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+ul,ol{
+   list-style-type: none;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* //Common Css End */
+
+/* preloder style starts here  */
+#loder{
+    width: 100%;
+    height: 100vh;
+    background: #E5E5E5 url(../image/proloder.png!bw700) no-repeat center;
+    position: fixed;
+    z-index: 999999999999999999999999999999;
+    
+}
+/* Nav css Start */
+/* #mynav{
+    background: #E5E5E5;
+} */
+#mynav .mymenue ul li > a{
+    padding: 35px 15px;
+}
+#mynav .mymenue ul li:hover > a{
+    color: red;
+}
+#mynav .mymenue .menue_icon i{
+    padding: 40px 14px;
+    position: relative;
+}
+#mynav .mymenue .menue_icon i:hover{
+    color: red;
+}
+#mynav .mymenue .menue_icon i span{
+    position: absolute;
+    background: red;
+    border: 2px solid red;
+    color: #E5E5E5;
+    border-radius: 50%;
+    font-size: 8px;
+    left: 50%;
+    top: 38%;
+
+}
+#mynav .mymenue .menue_icon i span:hover{
+    background: #E5E5E5;
+    color: red;
+}
+
+
+/* //Nav css End */
+
+/* banner style  starts  */
+
+
+#banner .slide .slide_item{ 
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#banner .slide .slide_item::after{
+    content: '';
+    background-image: linear-gradient(to right,rgba(2, 5, 19, 0.7),
+    rgba(2, 4, 17, 0.6175),
+    rgba(1, 4, 15, 0.5484),
+    rgba(1, 3, 13, 0.4834),
+    rgba(0, 0, 0, 0));
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#banner .slide .slide_item .ban_tx h4{
+    font-size: 18px ;
+    line-height: 28px ;
+    color: #E5E5E5;
+}
+#banner .slide .slide_item .ban_tx h1{
+    font-size: 64px ;
+    line-height: 74px ;
+    font-weight: 700;
+    color: #E5E5E5;
+}
+#banner .slide .slide_item .ban_tx p{
+    font-family: roboto ,sans-serif;
+    font-size: 16px ;
+    line-height: 28px ;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+#banner .slide .slide_item .ban_tx div{
+    padding: 57px 0;
+}
+#banner .slide .slide_item .ban_tx a{
+    font-size: 18px ;
+    line-height: 30px ;
+    font-weight:600;
+    color: #E5E5E5;
+    padding: 26px 44px;
+    background: #FF6F61;
+}
+#banner .ban_dots{
+    font-size: 0;
+    border: none;
+    line-height: 0;
+}
+#banner .ban_dots li{
+
+}
+#banner .slide_child{
+    position: relative;
+}
+#banner .ban_dots li button{
+    background: #FF6F61;
+    height: 6px;
+    width: 10px;
+    border-radius:5px ;
+    box-shadow: none;
+    /* position: absolute; */
+}
+
+
+/* banner style ends */
+
+/* sells style stsrts  */
+#sells .sells_2_div{
+    background: #A6AAB7;  
+}
+#sells .sells_pic{
+    object-fit: cover;
+    object-position: center;
+    
+}
+#sells .sp_p_1{
+    margin:0 24px 26px 0;
+    background: #A6AAB7;
+}
+#sells .sp_p_2{
+    margin:0 24px 0 0;
+    background: #A6AAB7;
+}
